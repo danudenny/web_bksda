@@ -1,3 +1,3 @@
 <?php
-header ('Location:https://phpmu.com/');
+header ('Location:http://balaiksdasumsel.org');
 ?>

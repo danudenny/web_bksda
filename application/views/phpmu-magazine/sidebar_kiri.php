@@ -80,7 +80,7 @@
 						if ($r2x['gambar'] ==''){
 							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:250px; height:250px;' src='".base_url()."asset/foto_berita/small_no-image.jpg' alt='' /></a>";
 						}else{
-							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:250px; height:250px;' src='".base_url()."asset/foto_berita/$r2x[gambar]' alt='' /></a>";
+							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:250px; ' src='".base_url()."asset/foto_berita/$r2x[gambar]' alt='' /></a>";
 						}
 					echo "</div>
 					<div class='article-content'>

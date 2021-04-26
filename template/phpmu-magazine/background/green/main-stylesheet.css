@@ -829,6 +829,10 @@ a:focus {
 	margin: 10px;
 }
 
+#img .img_map{
+	width: 230px;
+}
+
 .peta_kawasan {
 	border: 1px #333 solid;
 	height: 400px;
@@ -2935,6 +2939,91 @@ a.hover-effect:hover .cover i:before {
 
 .visible-xs {
 	display: none !important;
+}
+
+@media (max-width: 800px) {
+	#map { 
+		height: 500px; 
+	}
+	.peta_kawasan {
+		border: 1px #333 solid;
+		height: 500px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	#feature_infos_bottom {
+		display: none;
+	}
+	#feature_infos {
+		z-index: 10000000000;
+		float: right;
+		margin: 2px;
+		height: 215px;
+		width: 200px;
+		background-color: #5a9e25;
+		border-radius: 5px;
+		margin-top: 280px;
+		position: absolute;
+	}
+
+	#info {
+		margin: 2px;
+		font-size: 12px;
+	}
+
+	#desc {
+		display: none;
+	}
+
+	#link_peta {
+		background-color: #eaeaea;
+		width: 170px;
+		padding: 5px;
+	}
+	#link_peta .linknya {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		font-weight:bold;
+		color:#333;
+	}
+
+	#link_peta .linknya:hover {
+		color:#5a9e25;
+	}
+
+	#link_peta .linknya:hover::after {
+		content: ' >>';
+	}
+
+	#img {
+		margin: 4px;
+	}
+
+	#img .img_map {
+		width: 190px;
+		height: 120px;
+	}
+
+	/* Header */
+	.header>.wrapper {
+		height: 100px;
+	}
+
+	div.images_header img {
+		margin-left: 10px;
+		width: 80px;
+	}
+
+	.breaking-news {
+		display: block;
+		margin-top: 0;
+		margin-bottom: 20px;
+		background: #fff;
+		box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 4%);
+		position: relative;
+		overflow: hidden
+	}
 }
 
 @media (max-width: 767px) {

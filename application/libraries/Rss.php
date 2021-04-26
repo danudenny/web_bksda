@@ -51,7 +51,7 @@ class rss {
         $user = str_replace('&lang=en-us&format=rss_200','',$trim);
         $rss_data.='</ul></div>
                     <div class="card-footer text-center">
-                      <a class="btn btn-default btn-sm btn-block" target="_BLANK" href="https://members.phpmu.com/forum" class="uppercase">View All Topic</a><br>
+                      <a class="btn btn-default btn-sm btn-block" target="_BLANK" href="#" class="uppercase">View All Topic</a><br>
                     </div></div>';
         return $rss_data;
     }

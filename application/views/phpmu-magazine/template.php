@@ -181,8 +181,8 @@
 			layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target="_blank" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -222,8 +222,8 @@
 			layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -263,8 +263,8 @@
 			layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -304,8 +304,8 @@
 			layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -344,8 +344,8 @@
             layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -384,8 +384,8 @@
             layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -424,8 +424,8 @@
             layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -464,8 +464,8 @@
             layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});
@@ -504,8 +504,8 @@
             layer.on('click', function (e) {
 				document.getElementById("info").innerHTML = feature.properties.FFF;
 				document.getElementById("desc").innerHTML = feature.properties.description;
-				document.getElementById("img").innerHTML = "<img src=" + baseUrl + "asset/peta/" + feature.properties.image + " width=\"230px\">";
-                document.getElementById("link_peta").innerHTML = `<a class="linknya" href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
 				$("#feature_infos").stop();
 				$("#feature_infos").fadeIn("fast");
 			});

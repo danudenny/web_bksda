@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Menu Font */
 .main-menu .the-menu li a,
 .secondary-menu ul li a {
-	font-family:"Titillium Web", sans-serif;
+	font-family:"Poppins", sans-serif;
 }
 
 /* Block Titles */
 .list-title {
-	font-family:"Titillium Web", sans-serif;
+	font-family:"Poppins", sans-serif;
 }
 
 /* Article Titles */
 h1, h2, h3,
 h4, h5, h6 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 

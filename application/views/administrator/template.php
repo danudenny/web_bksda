@@ -11,7 +11,7 @@ if ($this->session->level==''){
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><?php echo $iden['nama_website']; ?></title>
-  <meta name="author" content="phpmu.com">
+  <meta name="author" content="BKSDA Sumsel">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>asset/admin_mu/plugins/fontawesome-free/css/all.min.css">
   <!-- overlayScrollbars -->
@@ -87,10 +87,10 @@ if ($this->session->level==''){
 
   <!-- Main Footer -->
   <footer class="main-footer text-sm">
-    <strong>Copyright &copy; 2014-<?php echo date('Y'); ?> <a target='_BLANK' href="https://members.phpmu.com/"><?php echo $iden['nama_website']; ?></a>.</strong>
+    <strong>Copyright &copy; 2021-<?php echo date('Y'); ?> <a target='_BLANK' href="<?php echo base_url(); ?>"><?php echo $iden['nama_website']; ?></a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-    <a style='color:#cecece !important' href="<?php echo base_url().$this->uri->segment(1); ?>/upgrade"><b>Version</b> 3.0.0</a>
+    <a style='color:#cecece !important' href="#"><b>Version</b> 1.0.0</a>
     </div>
   </footer>
 </div>

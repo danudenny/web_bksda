@@ -1,7 +1,7 @@
 <?php
 echo "
 <div class='wrapper bg_header'>			
-	<div class='header-logo'>";
+	<div class='header-logo images_header'>";
 		  $iden = $this->model_utama->view('identitas')->row_array();
 		  $logo = $this->model_utama->view_ordering_limit('logo','id_logo','DESC',0,1);
 		  foreach ($logo->result_array() as $row) {
@@ -26,7 +26,7 @@ echo "
 		  ".hari_ini(date('w')).", ".tgl_indo(date('Y-m-d')).", <span id='jam'></span></span>
 		<div class='header-search'>
 			".form_open('berita/index')."
-				<input type='text' placeholder='Search something..'' name='kata' class='search-input' required/>
+				<input type='text' placeholder='Masukkan kata kunci..'' name='kata' class='search-input' required/>
 				<input type='submit' value='Search' name='cari' class='search-button'/>
 			</form>
 		</div>

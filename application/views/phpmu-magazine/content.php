@@ -35,7 +35,7 @@
 					<ul class="article-block">
 						<?php 
 							$no = 1;
-							$hot = $this->model_utama->view_join_two('berita','users','kategori','username','id_kategori',array('status' => 'Y'),'tanggal','DESC',0,7);
+							$hot = $this->model_utama->view_join_two('berita','users','kategori','username','id_kategori',array('status' => 'Y'),'tanggal','DESC',0,8);
                 			foreach ($hot->result_array() as $row) {	
 							$total_komentar = $this->model_utama->view_where('komentar',array('id_berita' => $row['id_berita']))->num_rows();
 							$tgl = tgl_indo($row['tanggal']);

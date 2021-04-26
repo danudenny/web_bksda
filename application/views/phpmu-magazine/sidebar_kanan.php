@@ -139,7 +139,7 @@
 								if ($r2x['gambar'] ==''){
 									echo "<a href='".base_url()."$r2x[nama]' class='hover-effect'><img style='width:300px; height:50px;' src='".base_url()."asset/foto_berita/small_no-image.jpg' alt='' /></a>";
 								}else{
-									echo "<a href='$r2x[url]' class='hover-effect'><img style='width:300px; height:50px;' src='".base_url()."asset/link_skpd/$r2x[gambar]' alt='' /></a>";
+									echo "<a target='_blank' href='$r2x[url]' class='hover-effect'><img style='width:300px; height:50px;' src='".base_url()."asset/link_skpd/$r2x[gambar]' alt='' /></a>";
 								}
 							echo "</div>
 						  </li>";
