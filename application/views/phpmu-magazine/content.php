@@ -6,6 +6,7 @@
 		<h3 id="info"></h3>
 		<p id="desc"></p>
 		<div id="img"></div>
+		<div id="link_peta"></div>
 	</div>
 	<div id="map"></div>
 </div>
@@ -34,7 +35,7 @@
 					<ul class="article-block">
 						<?php 
 							$no = 1;
-							$hot = $this->model_utama->view_join_two('berita','users','kategori','username','id_kategori',array('status' => 'Y'),'tanggal','DESC',0,5);
+							$hot = $this->model_utama->view_join_two('berita','users','kategori','username','id_kategori',array('status' => 'Y'),'tanggal','DESC',0,7);
                 			foreach ($hot->result_array() as $row) {	
 							$total_komentar = $this->model_utama->view_where('komentar',array('id_berita' => $row['id_berita']))->num_rows();
 							$tgl = tgl_indo($row['tanggal']);
@@ -76,7 +77,7 @@
 				</div>
 			</div>
 
-			<div class="block">
+			<!-- <div class="block">
 				<div class="block-title" style="background: #dd8229;">
 					<h2>Pilihan Redaksi</h2>
 				</div>
@@ -123,7 +124,7 @@
 						?>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 			
 			
 		</div>				

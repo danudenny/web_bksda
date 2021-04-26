@@ -9,14 +9,15 @@ var json_GUMAI454_3 = {
         F_JUK: "SM",
         luas: 47967.04241,
         tap: null,
-        description: 'Ekosistem Kawasan HSA Gumai Tebing Tinggi adalah tipe ekosistem hutan hujan dataran tinggi yang vegetasinya beragam dan didominasi oleh famili Dipterocapaceae',
+        description: 'HSA Gumai Tebing Tinggi merupakan ekosistem hutan hujan yang vegetasinya beragam dan didominasi oleh famili Dipterocapaceae',
         FFF: "Hutan Suaka Alam Gumai Tebing Tinggi",
         Rev1622015: "SM",
         FUNGSI: null,
         kodsta: "D",
         skorsta: 1.0,
         nilsta: 1.0,
-        image: 'images/gumai.jpg'
+        image: 'images/gumai.jpg',
+        link: 'halaman/detail/gumai-tebing-tinggi'
       },
       geometry: {
         type: "MultiPolygon",

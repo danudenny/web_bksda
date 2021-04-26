@@ -78,16 +78,13 @@
 			echo "<li>
 					<div class='article-photo'>";
 						if ($r2x['gambar'] ==''){
-							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:59px; height:42px;' src='".base_url()."asset/foto_berita/small_no-image.jpg' alt='' /></a>";
+							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:250px; height:250px;' src='".base_url()."asset/foto_berita/small_no-image.jpg' alt='' /></a>";
 						}else{
-							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:59px; height:42px;' src='".base_url()."asset/foto_berita/$r2x[gambar]' alt='' /></a>";
+							echo "<a href='".base_url()."$r2x[judul_seo]' class='hover-effect'><img style='width:250px; height:250px;' src='".base_url()."asset/foto_berita/$r2x[gambar]' alt='' /></a>";
 						}
 					echo "</div>
 					<div class='article-content'>
-						<h4><a href='".base_url()."$r2x[judul_seo]'>$r2x[judul]</a></h4>
-						<span class='meta'>
-							<a href='".base_url()."$r2x[judul_seo]'><span class='icon-text'>&#128340;</span>$r2x[jam], ".tgl_indo($r2x['tanggal'])."</a>
-						</span>
+
 					</div>
 				  </li>";
 		}

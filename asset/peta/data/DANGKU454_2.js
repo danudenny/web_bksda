@@ -16,7 +16,8 @@ var json_DANGKU454_2 = {
         kodsta: "D",
         skorsta: 1.0,
         nilsta: 1.0,
-        image: 'images/dangku.jpg'
+        image: 'images/dangku.jpg',
+        link: 'halaman/detail/dangku'
       },
       geometry: {
         type: "MultiPolygon",

@@ -784,7 +784,6 @@ a:focus {
 	height: 370px;
 	width: 250px;
 	background-color: #5a9e25;
-	border: 1px #5a9e25 solid;
 	border-radius: 10px;
 	position: absolute;
 	margin-left: 920px;
@@ -801,9 +800,29 @@ a:focus {
 #desc {
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 10px;
 	font-weight:bold;
     color:#eaeaea;
+}
+
+#link_peta {
+	background-color: #fff;
+	width: 160px;
+	padding: 5px;
+}
+#link_peta .linknya {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	font-weight:bold;
+    color:#333;
+}
+
+#link_peta .linknya:hover {
+    color:#5a9e25;
+}
+
+#link_peta .linknya:hover::after {
+    content: ' >>';
 }
 
 #img {

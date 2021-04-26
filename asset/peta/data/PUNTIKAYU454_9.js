@@ -15,8 +15,9 @@ var json_PUNTIKAYU454_9 = {
         skorsta: 1.0,
         nilsta: 1.0,
         FFF: 'Taman Wisata Alam Punti Kayu',
-        description: 'Punti Kayu merupakan hutan pinus dalam kota terbesar di Indonesia. Selain menjadi tempat wisata, Punti Kayu berkontribusi dalam penyerapan karbon dioksida dan mengimbangi pembangunan kota Palembang yang cukup pesat.',
-        image: 'images/punti.jpg'
+        description: 'Punti Kayu merupakan hutan pinus dalam kota terbesar di Indonesia. Selain menjadi tempat wisata, Punti Kayu berkontribusi dalam penyerapan karbon dioksida.',
+        image: 'images/punti.jpg',
+        link: 'halaman/detail/punti-kayu'
 
       },
       geometry: {

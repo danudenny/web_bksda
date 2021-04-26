@@ -19,8 +19,9 @@ var json_PERMISAN_8 = {
         luas: 14697227.6269,
         KET: "TWA PERMISAN",
         FFF: 'Taman Wisata Alam Gunung Permisan',
-        description: 'Yang menjadi daya tarik di kawasan ini adalah Bukit Nenek, karena adanya goa yang terdapat pada puncak bukitnya dan batu yang terbelah serta dataran di puncak untuk melihat pemandangan.',
-        image: 'images/permisan.jpg'
+        description: 'Yang menjadi daya tarik adalah Bukit Nenek, karena adanya goa di puncak bukitnya dan batu yang terbelah serta dataran di puncak untuk melihat pemandangan.',
+        image: 'images/permisan.jpg',
+        link: 'halaman/detail/gunung-permisan'
       },
       geometry: {
         type: "MultiPolygon",

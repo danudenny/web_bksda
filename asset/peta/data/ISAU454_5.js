@@ -15,8 +15,9 @@ var json_ISAU454_5 = {
         kodsta: "D",
         skorsta: 1.0,
         nilsta: 1.0,
-        description: 'Kawasan ini merupakan perwakilan tipe vegetasi hutan hujan pegunungan dengan jenis tumbuhan yang didominasi oleh famili Dipterocarpaceae, Fagaceae, Lauraceae',
-        image: 'images/isau.jpg'
+        description: 'Kawasan ini merupakan hutan hujan pegunungan dengan jenis tumbuhan yang didominasi oleh famili Dipterocarpaceae, Fagaceae, Lauraceae',
+        image: 'images/isau.jpg',
+        link: 'halaman/detail/isau-isau'
       },
       geometry: {
         type: "MultiPolygon",

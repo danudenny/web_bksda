@@ -15,9 +15,9 @@ var json_PASU454_7 = {
         skorsta: 1.0,
         nilsta: 1.0,
         FFF: 'Suaka Margasatwa Padang Sugihan',
-        description: 'Di dalam kawasan, didirikan Pusat Latiha Gajah. Pengunjung dapat menikmati atraksi gajak dan berpetualang dengan menunggangi gajah.',
-        image: 'images/pasu.jpg'
-
+        description: 'Terdapat Pusat Latihan Gajah. Pengunjung dapat menikmati atraksi gajak dan berpetualang dengan menunggangi gajah.',
+        image: 'images/pasu.jpg',
+        link: 'halaman/detail/padang-sugihan'
       },
       geometry: {
         type: "MultiPolygon",

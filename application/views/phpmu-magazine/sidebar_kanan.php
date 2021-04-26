@@ -36,6 +36,25 @@
 					?>
 				</td>
 			<tr>
+			<tr>
+				<td>IP Address Anda</td>
+				<td>&nbsp:&nbsp</td>
+				<td> <?php echo $_SERVER['REMOTE_ADDR'];  ?>
+				</td>
+			<tr>
+		    <tr>
+				<td>Lokasi Saat Ini</td>
+				<td>&nbsp:&nbsp</td>
+				<td> <?php 
+				$PublicIP = $_SERVER['REMOTE_ADDR'];
+				$json     = file_get_contents("http://ipinfo.io/$PublicIP/geo");
+                $json     = json_decode($json, true);
+                $city     = $json['city'];
+				
+				echo $city;
+				?>
+				</td>
+			<tr>
 		</table>
 	</div>
 </div>
@@ -108,12 +127,12 @@
 </div>
 
 <div class="widget">
-	<h3>Link SKPD Terkait</h3>
+	<h3>Link Terkait</h3>
 	<div class="widget-link">
 		<ul>
 			<li>
 				<?php 
-					$linkskpd = $this->model_utama->view_single('link_skpd',array('aktif' => 'Y'),'id','DESC');
+					$linkskpd = $this->model_utama->view_single('link_skpd',array('aktif' => 'Y'),'id','ASC');
 					foreach ($linkskpd->result_array() as $r2x) {
 					echo "<li>
 							<div class='article-photo'>";

@@ -16,7 +16,8 @@ var json_BENTAYAN454_1 = {
         kodsta: "D",
         skorsta: 1.0,
         nilsta: 1.0,
-        image: 'images/bentayan.jpg'
+        image: 'images/bentayan.jpg',
+        link: 'halaman/detail/bentayan'
       },
       geometry: {
         type: "MultiPolygon",

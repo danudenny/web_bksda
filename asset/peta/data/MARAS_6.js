@@ -20,7 +20,8 @@ var json_MARAS_6 = {
         KET: null,
         FFF: 'Taman Nasional Gunung Maras',
         description: 'Keunikan kawasan ini terdiri dari beberapa tipe ekosistem yang menjadi satu kesatuan bentang alam, yaitu ekosistem mangrove, pegunungan, dan dataran rendah.',
-        image: 'images/maras.jpg'
+        image: 'images/maras.jpg',
+        link: 'halaman/detail/maras'
       },
       geometry: {
         type: "MultiPolygon",

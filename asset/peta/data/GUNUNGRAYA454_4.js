@@ -16,7 +16,8 @@ var json_GUNUNGRAYA454_4 = {
         kodsta: "D",
         skorsta: 1.0,
         nilsta: 1.0,
-        image: 'images/gunungraya.jpg'
+        image: 'images/gunungraya.jpg',
+        link: 'halaman/detail/gunung-raya'
       },
       geometry: {
         type: "MultiPolygon",
