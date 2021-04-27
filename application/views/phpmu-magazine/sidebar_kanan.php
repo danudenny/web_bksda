@@ -1,66 +1,5 @@
 <div class="widget">
-	<h3>Statisik Web</h3>
-	<div class="widget-stat">
-		<table>
-			<tr>
-				<td>Jumlah Total Pengunjung </td>
-				<td>&nbsp:&nbsp </td>
-				<td>
-					<?php
-						$kunjungan = $this->model_utama->stat_all_sum();
-						foreach ($kunjungan->result_array() as $row){
-							echo $row[jumlah];
-						}
-					?>
-				</td>
-			<tr>
-			<tr>
-				<td>Jumlah Pengunjung Hari Ini</td>
-				<td>&nbsp:&nbsp</td>
-				<td> <?php
-						$kunjunganHarini = $this->model_utama->stat_today_sum();
-						foreach ($kunjunganHarini->result_array() as $row){
-							echo $row[hits];
-						}
-					?>
-				</td>
-			<tr>
-			<tr>
-				<td>Jumlah Pengunjung Bulan Ini</td>
-				<td>&nbsp:&nbsp</td>
-				<td> <?php
-						$kunjunganHarini = $this->model_utama->stat_month_sum();
-						foreach ($kunjunganHarini->result_array() as $row){
-							echo $row[hits];
-						}
-					?>
-				</td>
-			<tr>
-			<tr>
-				<td>IP Address Anda</td>
-				<td>&nbsp:&nbsp</td>
-				<td> <?php echo $_SERVER['REMOTE_ADDR'];  ?>
-				</td>
-			<tr>
-		    <tr>
-				<td>Lokasi Saat Ini</td>
-				<td>&nbsp:&nbsp</td>
-				<td> <?php 
-				$PublicIP = $_SERVER['REMOTE_ADDR'];
-				$json     = file_get_contents("http://ipinfo.io/$PublicIP/geo");
-                $json     = json_decode($json, true);
-                $city     = $json['city'];
-				
-				echo $city;
-				?>
-				</td>
-			<tr>
-		</table>
-	</div>
-</div>
-
-<div class="widget">
-	<h3>Temukan juga kami di</h3>
+	<h3>Media Sosial</h3>
 	<div class="widget-social">
 		<div class="social-bar">
 		<?php
@@ -131,21 +70,105 @@
 	<div class="widget-link">
 		<ul>
 			<li>
-				<?php 
+				<?php
 					$linkskpd = $this->model_utama->view_single('link_skpd',array('aktif' => 'Y'),'id','ASC');
 					foreach ($linkskpd->result_array() as $r2x) {
 					echo "<li>
-							<div class='article-photo'>";
-								if ($r2x['gambar'] ==''){
-									echo "<a href='".base_url()."$r2x[nama]' class='hover-effect'><img style='width:300px; height:50px;' src='".base_url()."asset/foto_berita/small_no-image.jpg' alt='' /></a>";
-								}else{
-									echo "<a target='_blank' href='$r2x[url]' class='hover-effect'><img style='width:300px; height:50px;' src='".base_url()."asset/link_skpd/$r2x[gambar]' alt='' /></a>";
-								}
-							echo "</div>
+							<div class='link_skpd'>
+								<a target='_BLANK' href='$r2x[url]'>$r2x[nama]</a>
+							</div>
+							
 						  </li>";
 					}
 				?>
 			</li>
 		</ul>
+	</div>
+</div>
+
+<div class="widget">
+	<h3>Statisik Pengunjung</h3>
+	<div class="widget-stat">
+		<table>
+			<tr>
+				<td>Jumlah Total Pengunjung </td>
+				<td>&nbsp:&nbsp </td>
+				<td>
+					<?php
+						$kunjungan = $this->model_utama->stat_all_sum();
+						foreach ($kunjungan->result_array() as $row){
+							echo $row[jumlah];
+						}
+					?>
+				</td>
+			<tr>
+			<tr>
+				<td>Jumlah Pengunjung Hari Ini</td>
+				<td>&nbsp:&nbsp</td>
+				<td> <?php
+						$kunjunganHarini = $this->model_utama->stat_today_sum();
+						foreach ($kunjunganHarini->result_array() as $row){
+							echo $row[hits];
+						}
+					?>
+				</td>
+			<tr>
+			<tr>
+				<td>Jumlah Pengunjung Bulan Ini</td>
+				<td>&nbsp:&nbsp</td>
+				<td> <?php
+						$kunjunganHarini = $this->model_utama->stat_month_sum();
+						foreach ($kunjunganHarini->result_array() as $row){
+							echo $row[hits];
+						}
+					?>
+				</td>
+			<tr>
+			<tr>
+				<td>IP Address Anda</td>
+				<td>&nbsp:&nbsp</td>
+				<td> <?php echo $_SERVER['REMOTE_ADDR'];  ?>
+				</td>
+			<tr>
+		    <tr>
+				<td>Lokasi Saat Ini</td>
+				<td>&nbsp:&nbsp</td>
+				<td> <?php 
+				$PublicIP = $_SERVER['REMOTE_ADDR'];
+				$json     = file_get_contents("http://ipinfo.io/$PublicIP/geo");
+                $json     = json_decode($json, true);
+                $city     = $json['city'];
+
+				echo $city;
+				?>
+				</td>
+			<tr>
+		</table>
+	</div>
+</div>
+
+<div class="block">
+  <h2 style='color:#000; border-bottom: 2px solid #000;' class="list-title">Galeri Video</h2>
+  <div class="latest-galleries">
+	  <div class="gallery-widget">
+		  <div class="gallery-video" rel="hover-parent">
+			  <a href="#" class="slide-left icon-text"></a>
+			  <a href="#" class="slide-right icon-text"></a>
+			  <ul rel="4">
+				  <?php 
+				  	$album = $this->model_utama->view_where_ordering_limit('playlist',array('aktif' => 'Y'),'id_playlist','RANDOM',0,4);
+					foreach ($album->result_array() as $row) {
+					$jumlah = $this->model_utama->view_where('video',array('id_playlist' => $row['id_playlist']))->num_rows();
+					echo "<li> 
+							  <a href='".base_url()."playlist/detail/$row[playlist_seo]' class='hover-effect delegate'>
+								  <span class='cover'><i></i>
+								  <img src='".base_url()."asset/img_playlist/$row[gbr_playlist]' alt='$row[jdl_playlist] - (Ada $jumlah Video)'></span>
+							  </a>
+						  </li>";
+					}
+				  ?>
+			  </ul>
+		  </div>
+		</div>
 	</div>
 </div>
