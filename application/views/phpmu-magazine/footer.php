@@ -11,7 +11,7 @@ echo "
 		echo "
 		</div
 
-	
+
 		<div class='header-menu'>
 			<h3>
 			KEMENTERIAN LINGKUNGAN HIDUP DAN KEHUTANAN <br>
@@ -23,7 +23,8 @@ echo "
 			Telepon: (0711) 410948 | Email: bksdasumsel@yahoo.co.id
 			</p>
 		</div>
-		<p style='text-align: center;'>&copy; ".date('Y')." Copyright <b>BKSDA SUMSEL</b>. All Rights reserved.</p>
+		<p style='text-align: left;'>&copy; ".date('Y')." Copyright <b>BKSDA SUMSEL</b>. All Rights reserved.</p>
 	</div>
 </div>";
 ?>
+

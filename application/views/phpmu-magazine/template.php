@@ -36,7 +36,8 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>asset/peta/css/leaflet.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>asset/peta/css/qgis2web.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>asset/peta/css/fontawesome-all.min.css">
-	
+
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/jscript/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/jscript/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/jscript/theme-scripts.js"></script>
@@ -119,7 +120,10 @@
 
 	<footer>
 		<div class="footer">
-			<?php 
+            <div>
+                <iframe src="//lightwidget.com/widgets/e53a2a12cb74546686b161f7b683f435.html" scrolling="no" allowtransparency="true" class="lightwidget-widget instagram_widget"></iframe>
+            </div>
+            <?php 
 				include "footer.php";
 				$this->model_utama->kunjungan(); 
 			?>
@@ -145,7 +149,8 @@
 	<script src="<?php echo base_url(); ?>asset/peta/data/PASU454_7.js"></script>
 	<script src="<?php echo base_url(); ?>asset/peta/data/PERMISAN_8.js"></script>
 	<script src="<?php echo base_url(); ?>asset/peta/data/PUNTIKAYU454_9.js"></script>
-	<script src="<?php echo base_url(); ?>asset/peta/data/SERELO454_10.js"></script>
+	<script src="<?php echo base_url(); ?>asset/peta/data/SERELO454_0.js"></script>
+    <script src="<?php echo base_url(); ?>asset/peta/data/JERING_1.js"></script>
 	<script>
 		var getUrl = window.location;
 		var baseUrl = getUrl .protocol + "//" + getUrl.host + getUrl.pathname;
@@ -540,6 +545,87 @@
         });
         bounds_group.addLayer(layer_PUNTIKAYU454_9);
         map.addLayer(layer_PUNTIKAYU454_9);
+
+        function pop_SERELO454_0(feature, layer) {
+            layer.on('click', function (e) {
+				document.getElementById("info").innerHTML = feature.properties.FFF;
+				document.getElementById("desc").innerHTML = feature.properties.description;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				$("#feature_infos").stop();
+				$("#feature_infos").fadeIn("fast");
+			});
+        }
+
+        function style_SERELO454_0_0() {
+            return {
+                pane: 'pane_SERELO454_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(133,182,111,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_SERELO454_0');
+        map.getPane('pane_SERELO454_0').style.zIndex = 400;
+        map.getPane('pane_SERELO454_0').style['mix-blend-mode'] = 'normal';
+        var layer_SERELO454_0 = new L.geoJson(json_SERELO454_0, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_SERELO454_0',
+            layerName: 'layer_SERELO454_0',
+            pane: 'pane_SERELO454_0',
+            onEachFeature: pop_SERELO454_0,
+            style: style_SERELO454_0_0,
+        });
+        bounds_group.addLayer(layer_SERELO454_0);
+        map.addLayer(layer_SERELO454_0);
+        function pop_JERING_1(feature, layer) {
+            layer.on('click', function (e) {
+				document.getElementById("info").innerHTML = feature.properties.FFF;
+				document.getElementById("desc").innerHTML = feature.properties.description;
+				document.getElementById("img").innerHTML = "<img class='img_map' src=" + baseUrl + "asset/peta/" + feature.properties.image + " >";
+                document.getElementById("link_peta").innerHTML = `<a class="linknya" target=”_blank” href=${baseUrl}${feature.properties.link}> Baca Lebih Lanjut</a>`;
+				$("#feature_infos").stop();
+				$("#feature_infos").fadeIn("fast");
+			});
+        }
+
+        function style_JERING_1_0() {
+            return {
+                pane: 'pane_JERING_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,1,30,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_JERING_1');
+        map.getPane('pane_JERING_1').style.zIndex = 401;
+        map.getPane('pane_JERING_1').style['mix-blend-mode'] = 'normal';
+        var layer_JERING_1 = new L.geoJson(json_JERING_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_JERING_1',
+            layerName: 'layer_JERING_1',
+            pane: 'pane_JERING_1',
+            onEachFeature: pop_JERING_1,
+            style: style_JERING_1_0,
+        });
+        bounds_group.addLayer(layer_JERING_1);
+        map.addLayer(layer_JERING_1);
         setBounds();
 	</script>
 
@@ -561,7 +647,7 @@
 		var jam = waktu.getHours();
 		var menit = waktu.getMinutes();
 		var detik = waktu.getSeconds();
-		 
+
 		if (jam < 10){ jam = "0" + jam; }
 		if (menit < 10){ menit = "0" + menit; }
 		if (detik < 10){ detik = "0" + detik; }
