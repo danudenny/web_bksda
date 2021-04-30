@@ -2619,6 +2619,13 @@ a.hover-effect:hover .cover i:before {
     height: 400px;
 }
 
+.footer-info h6 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    bottom: 0
+}
+
 .footer-info h3 {
     margin-top: 20px;
 }
