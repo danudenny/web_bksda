@@ -6,12 +6,11 @@
 			$sosmed = $this->model_utama->view('identitas')->row_array();
 			$pecahd = explode(",", $sosmed['facebook']);
 		?>
-		<a target="_BLANK" href="<?php echo $pecahd[0]; ?>" class="social-icon"><span class="facebook">Facebook</span></a>
-		<a target="_BLANK" href="<?php echo $pecahd[1]; ?>" class="social-icon"><span class="twitter">Twitter</span></a>
-		<a target="_BLANK" href="<?php echo $pecahd[2]; ?>" class="social-icon"><span class="linkedin">Instagram</span></a>
-		<a target="_BLANK" href="<?php echo $pecahd[3]; ?>" class="social-icon"><span class="google">Youtube</span></a>
+		<a target="_BLANK" href="<?php echo $pecahd[0]; ?>" class="social-icon"><span class="facebook"><i class="lni lni-facebook"></i></span></a>
+		<a target="_BLANK" href="<?php echo $pecahd[1]; ?>" class="social-icon"><span class="twitter"><i class="lni lni-twitter"></i></span></a>
+		<a target="_BLANK" href="<?php echo $pecahd[2]; ?>" class="social-icon"><span class="linkedin"><i class="lni lni-instagram-original"></i></span></a>
+		<a target="_BLANK" href="<?php echo $pecahd[3]; ?>" class="social-icon"><span class="google"><i class="lni lni-youtube"></i></span></a>
 		</div>
-		<p>Ikuti kami di facebook, twitter, Instagram, Youtube dan dapatkan informasi terbaru dari kami disana.</p>
 	</div>
 </div>
 
@@ -75,7 +74,7 @@
 					foreach ($linkskpd->result_array() as $r2x) {
 					echo "<li>
 							<div class='link_skpd'>
-								<a target='_BLANK' href='$r2x[url]'>$r2x[nama]</a>
+								<i class='lni lni-chevron-right'></i><a target='_BLANK' href='$r2x[url]'>$r2x[nama]</a>
 							</div>
 							
 						  </li>";
@@ -87,7 +86,7 @@
 </div>
 
 <div class="widget">
-	<h3>Statisik Pengunjung</h3>
+	<h3>Terimakasih Telah Singgah</h3>
 	<div class="widget-stat">
 		<table>
 			<tr>
@@ -97,7 +96,7 @@
 					<?php
 						$kunjungan = $this->model_utama->stat_all_sum();
 						foreach ($kunjungan->result_array() as $row){
-							echo $row[jumlah];
+							echo $row['jumlah'];
 						}
 					?>
 				</td>
@@ -108,7 +107,7 @@
 				<td> <?php
 						$kunjunganHarini = $this->model_utama->stat_today_sum();
 						foreach ($kunjunganHarini->result_array() as $row){
-							echo $row[hits];
+							echo $row['hits'];
 						}
 					?>
 				</td>
@@ -119,28 +118,9 @@
 				<td> <?php
 						$kunjunganHarini = $this->model_utama->stat_month_sum();
 						foreach ($kunjunganHarini->result_array() as $row){
-							echo $row[hits];
+							echo $row['hits'];
 						}
 					?>
-				</td>
-			<tr>
-			<tr>
-				<td>IP Address Anda</td>
-				<td>&nbsp:&nbsp</td>
-				<td> <?php echo $_SERVER['REMOTE_ADDR'];  ?>
-				</td>
-			<tr>
-		    <tr>
-				<td>Lokasi Saat Ini</td>
-				<td>&nbsp:&nbsp</td>
-				<td> <?php 
-				$PublicIP = $_SERVER['REMOTE_ADDR'];
-				$json     = file_get_contents("http://ipinfo.io/$PublicIP/geo");
-                $json     = json_decode($json, true);
-                $city     = $json['city'];
-
-				echo $city;
-				?>
 				</td>
 			<tr>
 		</table>

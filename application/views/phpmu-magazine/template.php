@@ -24,6 +24,8 @@
 	} ?>
 	<link rel="shortcut icon" href="<?php echo base_url(); ?>asset/images/<?php echo favicon(); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss.xml" />
+    
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/reset.css" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/main-stylesheet.css" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/shortcode.css" />

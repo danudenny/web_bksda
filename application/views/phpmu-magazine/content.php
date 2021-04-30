@@ -1,6 +1,6 @@
 <div class="peta_kawasan">
 	<div id="feature_infos_bottom"> 
-		<p class="petunjuk"><i class="fa fa-mouse-pointer"></i> Klik pada bagian peta untuk memunculkan informasi dan gambar.</p>
+		<p class="petunjuk"><i class="fa fa-mouse-pointer"></i> Klik pada bagian peta untuk memunculkan informasi dan kawasan konservasi.</p>
 	</div>
 	<div id="feature_infos"> 
 		<h3 id="info"></h3>
