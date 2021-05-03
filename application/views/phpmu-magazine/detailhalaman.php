@@ -21,8 +21,8 @@
 			</div>
 		</div>
 
-		<h1><?php echo "<b>$rows[judul]</b>"; ?></h1>
-		<div class="author">
+		<h1><?php echo "<b style='text-transform: uppercase;'>$rows[judul]</b>"; ?></h1>
+		<!-- <div class="author">
 			<span class="hover-effect left">
 			<?php $test = md5(strtolower(trim($rows['email']))); 
 				echo "<img src='http://www.gravatar.com/avatar/$test.jpg?s=100'/>";
@@ -32,7 +32,7 @@
 				<span>By <b><?php echo "$rows[nama_lengkap]"; ?></b></span>
 				<span class="meta"><?php echo tgl_indo($rows['tgl_posting']).", $rows[jam] WIB"; ?></span>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 

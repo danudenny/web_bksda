@@ -390,19 +390,19 @@ class Administrator extends CI_Controller {
 		if (isset($_POST['submit'])){
 			$config['upload_path'] = 'asset/foto_berita/';
 	        $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-	        $config['max_size'] = '3000'; // kb
+	        $config['max_size'] = '7000'; // kb
 	        $this->load->library('upload', $config);
 	        $this->upload->do_upload('k');
 	        $hasil=$this->upload->data();
             
             $config['source_image'] = 'asset/foto_berita/'.$hasil['file_name'];
-            $config['wm_text'] = 'BKSDA SUMSEL';
+            $config['wm_text'] = 'balaiksdasumsel.org';
             $config['wm_type'] = 'text';
-            $config['wm_font_path'] = './system/fonts/texb.ttf';
+            $config['wm_font_path'] = './system/fonts/Helvetica.ttf';
             $config['wm_font_size'] = '26';
-            $config['wm_font_color'] = 'ffffff';
-            $config['wm_vrt_alignment'] = 'middle';
-            $config['wm_hor_alignment'] = 'center';
+            $config['wm_font_color'] = 'eaeaea';
+            $config['wm_vrt_alignment'] = 'bottom';
+            $config['wm_hor_alignment'] = 'right';
             $config['wm_padding'] = '20';
             $this->load->library('image_lib',$config);
             $this->image_lib->watermark();
@@ -2294,7 +2294,7 @@ class Administrator extends CI_Controller {
             $subject         = $this->input->post('c');
             $message         = $this->input->post('isi')." <br><hr><br> ".$this->input->post('d');
             
-            $this->email->from('danudenny@gmail.com', 'BKSDA SUMSEL');
+            $this->email->from('bksdasumsel@yahoo.co.id', 'BKSDA Sumatera Selatan');
             $this->email->to($email);
             $this->email->cc('');
             $this->email->bcc('');

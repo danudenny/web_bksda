@@ -7,9 +7,13 @@
               $attributes = array('class'=>'form-horizontal','role'=>'form');
               echo form_open_multipart($this->uri->segment(1).'/tambah_listberita',$attributes); 
           echo "<table class='table table-sm table-borderless'>
-                  <tbody>
+                  <tbody> 
                     <input type='hidden' name='id' value=''>
-                    <tr><th width='120px' scope='row'>Judul</th>    <td><input type='text' class='form-control' name='b' required></td></tr>
+                    <tr>
+                      <th width='120px' scope='row'>Judul</th>
+                      <td><input type='text' class='form-control' name='b' required></td>
+                      
+                    </tr>
                     <tr><th scope='row'>Sub Judul</th>              <td><input type='text' class='form-control' name='c'></td></tr>
                     <tr><th scope='row'>Video Youtube</th>          <td><input type='text' class='form-control' name='d' placeholder='Contoh link: http://www.youtube.com/embed/xbuEmoRWQHU'></td></tr>
                     <tr><th scope='row'>Kategori</th>               <td><select name='a' class='form-control' required>

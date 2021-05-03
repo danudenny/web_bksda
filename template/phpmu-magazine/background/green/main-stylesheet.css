@@ -2554,6 +2554,15 @@ a.hover-effect:hover .cover i:before {
     padding-bottom: 20px;
 }
 
+.label_tag_kategori {
+    background-color: #638240;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 3px;
+    color: #eaeaea;
+    line-height: 80%;
+}
+
 .footer .wrapper:after {
     display: block;
     content: '';
