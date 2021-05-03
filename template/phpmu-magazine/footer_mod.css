@@ -17,6 +17,7 @@
     padding: 50px;
     background-image: url('https://res.cloudinary.com/killtdj/image/upload/v1620050318/image_3_qkccyq.png');
     height: 400px;
+    background-size: cover;
 }
 
 .flex-item:nth-child(1) {
@@ -127,4 +128,31 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%
+    }
+    .flex-item:nth-child(1) {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .flex-item:nth-child(1) h4 {
+        font-size: 11px;
+    }
+    .flex-item:nth-child(1) p {
+        font-size: 9px;
+    }
+    .flex-item:nth-child(4) {
+        display: none;
+    }
+    .flex-item:nth-child(5) {
+        display: none;
+    }
 }
