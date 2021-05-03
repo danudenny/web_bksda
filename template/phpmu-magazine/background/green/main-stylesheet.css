@@ -2554,6 +2554,18 @@ a.hover-effect:hover .cover i:before {
     padding-bottom: 20px;
 }
 
+.login-page {
+    background: url("https://res.cloudinary.com/killtdj/image/upload/v1620038219/1._Lahan_Gambut_SM_Padang_Sugihan_-_Taufan_Kharis_mrjnsy.png") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.login-logo a {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #333;
+}
+
 .label_tag_kategori {
     background-color: #638240;
     border-radius: 2px;

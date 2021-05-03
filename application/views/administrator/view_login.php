@@ -13,10 +13,20 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/admin_mu/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/admin_mu/style.css">
+
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-</head>
+   </head>
 <body class="hold-transition login-page">
+<div class="login-info-bksda">
+    <img class="logo-bksda" src="<?php echo base_url(); ?>/asset/images/20170830013425.png" width="20%">
+    <h4>
+			KEMENTERIAN LINGKUNGAN HIDUP DAN KEHUTANAN <br>
+			DIREKTORAT JENDERAL KONSERVASI SUMBER DAYA ALAM DAN EKOSISTEM <br>
+			BALAI KONSERVASI SUMBER DAYA ALAM SUMATERA SELATAN
+    </h4>
+</div>
 <div class="login-box">
   <div class="login-logo">
     <a href="#"><b>USERS</b> Login</a>
