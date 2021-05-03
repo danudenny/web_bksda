@@ -23,7 +23,7 @@ echo "
 			Telepon: (0711) 410948 | Email: bksdasumsel@yahoo.co.id
 			</p>
 		</div>
-		<h6>&copy; ".date('Y')." Copyright <b>BKSDA SUMSEL</b>. All Rights reserved.</h6>
+		<p>&copy; ".date('Y')." Copyright <b>BKSDA SUMSEL</b>. All Rights reserved.</p>
 	</div>
 </div>";
 ?>
