@@ -27,6 +27,7 @@
     
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/reset.css" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/footer_mod.css" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/main-stylesheet.css" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/shortcode.css" />
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/background/<?php echo background(); ?>/fonts.css" />
@@ -46,6 +47,7 @@
 	<?php if ($this->uri->segment(1)=='main' OR $this->uri->segment(1)==''){ ?>
 	<script type="text/javascript" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/slide/js/jssor.slider-23.1.0.mini.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/slide/js/slide.js"></script>
+
 	<?php } ?>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -58,6 +60,8 @@
 	<style type="text/css">.the-menu a.active{ color:#fff !important; } </style>
 </head>
 <body>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=752711185437049&autoLogAppEvents=1" nonce="loxBFZEu"></script>
+<div id="fb-root"></div>
 <div id='Back-to-top'>
   <img alt='Scroll to top' src='http://members.phpmu.com/asset/css/img/top.png'/>
 </div>
@@ -121,10 +125,10 @@
 	</div>
 
 	<footer>
-		<div class="footer">
-            <div>
+		<div class="footer_mod">
+            <!-- <div>
                 <iframe src="//lightwidget.com/widgets/e53a2a12cb74546686b161f7b683f435.html" scrolling="no" allowtransparency="true" class="lightwidget-widget instagram_widget"></iframe>
-            </div>
+            </div> -->
             <?php 
 				include "footer.php";
 				$this->model_utama->kunjungan(); 

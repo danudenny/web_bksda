@@ -1,0 +1,130 @@
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 50px;
+    background-image: url('https://res.cloudinary.com/killtdj/image/upload/v1620050318/image_3_qkccyq.png');
+    height: 400px;
+}
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.flex-item:nth-child(1) img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.flex-item:nth-child(2) li {
+    list-style: none;
+}
+
+.flex-item:nth-child(3) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.flex-item:nth-child(3) li {
+    list-style: none;
+}
+
+.link_kategori {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin: 5px;
+}
+
+.link_kategori i {
+    font-size: 10px;
+    margin: 5px;
+}
+
+.link_kategori a {
+    color: #fff;
+}
+
+.header_footer {
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 3px solid #333;
+    border-radius: 2px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.flex-item:nth-child(4) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.instagram_widget {
+    background-color: #fff;
+    border: 0;
+    overflow: scroll;
+    z-index: 10000000000000;
+}
+
+.flex-item:nth-child(5) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
