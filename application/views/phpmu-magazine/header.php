@@ -7,7 +7,10 @@ echo "
 		  foreach ($logo->result_array() as $row) {
 			echo "<a href='".base_url()."'><img style='max-height:120px' src='".base_url()."asset/logo/$row[gambar]'/></a>";
 		  }
-	echo "</div>	
+	echo "</div>
+	<div class='header-menu-mobile'>
+		<span class='text-menu-mobile'>BKSDA SUMSEL</span>
+	</div>
 
 	<div class='header-menu'>
 		<h3>

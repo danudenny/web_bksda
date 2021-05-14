@@ -5,6 +5,19 @@
     .header .header-menu {
         display: none;
     }
+    .header .header-logo {
+        display: inline;
+    }
+    .header-menu-mobile {
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .text-menu-mobile {
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif
+    }
     .menu-active .boxed {
         margin-left: 70%;
         overflow: hidden;
@@ -192,5 +205,8 @@
     }
     .footer {
         height: 300px;
+    }
+    .pengumuman-mobile {
+        display: block;
     }
 }

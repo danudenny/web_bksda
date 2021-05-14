@@ -270,6 +270,10 @@ a:focus {
     text-shadow: 2px 2px 3px #333;
 }
 
+.header-menu-mobile {
+    display: none;
+}
+
 .header .header-menu ul {
     display: block;
     margin-bottom: 7px;
@@ -638,6 +642,10 @@ a:focus {
 
 
 /* #4 Content styling */
+
+.pengumuman-mobile {
+    display: none !important;
+}
 
 .content {
     display: block;
