@@ -643,10 +643,6 @@ a:focus {
 
 /* #4 Content styling */
 
-.pengumuman-mobile {
-    display: none !important;
-}
-
 .content {
     display: block;
     padding: 20px 10px 35px 10px;
@@ -2511,6 +2507,10 @@ a.hover-effect:hover .cover i:before {
     margin-bottom: 20px;
 }
 
+.block-pengumuman {
+    display: none;
+}
+
 .double-block .content-block .widget {
     display: block;
     margin-bottom: 10px;
@@ -3083,6 +3083,9 @@ a.hover-effect:hover .cover i:before {
 @media (max-width: 800px) {
     #map {
         height: 500px;
+    }
+    .block-pengumuman {
+        display: block;
     }
     .peta_kawasan {
         border: 1px #333 solid;

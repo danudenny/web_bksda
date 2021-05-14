@@ -30,7 +30,7 @@
 				</div>
 			</div>
 
-			<div class="block pengumuman-mobile">
+			<div class="block-pengumuman">
 				<?php $r = $this->model_utama->view_where('kategori', array('sidebar' => 8))->row_array(); ?>
 				<h2 class="list-title" style="color: #dd8229;border-bottom: 2px solid #dd8229;"><?php echo "$r[nama_kategori]"; ?></h2>
 				<ul class="article-block">
