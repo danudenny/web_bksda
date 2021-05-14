@@ -236,57 +236,59 @@
     color: #fff;
 }
 
-.widget .social-bar {
-    display: block;
+.widget .social-bar-mobile {
+    display: inline-block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-
-/* .widget .social-bar a span.facebook-footer {
-    background: #4260b4;
-} */
-
-.widget .social-bar a span.facebook-footer i {
+.widget .social-bar-mobile a span.facebook-footer i {
     height: 20px;
+    width: 40px;
     font-size: 20px;
     font-weight: 50;
     color: #4260b4;
     border-radius: 5px;
     background-color: #333333;
+    padding: 7px;
+    text-align: center;
 }
 
-.widget .social-bar a span.twitter-footer i {
+.widget .social-bar-mobile a span.twitter-footer i {
     height: 20px;
+    width: 40px;
     font-size: 20px;
     font-weight: 50;
     color: #3fb9d7;
     background-color: #333333;
     border-radius: 5px;
+    padding: 7px;
+    text-align: center;
 }
 
-.widget .social-bar a span.google-footer i {
+.widget .social-bar-mobile a span.google-footer i {
     height: 20px;
+    width: 40px;
     font-size: 20px;
     font-weight: 50;
     text-align: center;
     color: #bf4b37;
     background-color: #333333;
     border-radius: 5px;
+    padding: 7px;
+    text-align: center;
 }
 
-
-/* .widget .social-bar a span.linkedin-footer {
-    background: #2876c6;
-} */
-
-.widget .social-bar a span.linkedin-footer i {
+.widget .social-bar-mobile a span.linkedin-footer i {
     height: 20px;
+    width: 40px;
     font-size: 20px;
     font-weight: 50;
     color: #2876c6;
     background-color: #333333;
     border-radius: 5px;
+    padding: 7px;
+    text-align: center;
 }
 
 .text-footer-sosial {

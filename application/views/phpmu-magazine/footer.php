@@ -12,7 +12,7 @@
 		</p>
 		<div class="widget">
 			<div class="text-footer-sosial">Sosial Media :</div>
-			<div class="social-bar">
+			<div class="social-bar-mobile">
 			<?php
 				$sosmed = $this->model_utama->view('identitas')->row_array();
 				$pecahd = explode(",", $sosmed['facebook']);
