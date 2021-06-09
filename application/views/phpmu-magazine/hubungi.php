@@ -1,12 +1,17 @@
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
  <style>
-     .contact-form-kategori select{
-         color: #0b2e13;
+     .button-wa {
+         background-color: #00b44e;
+         color: #fff;
+         padding: 10px;
+         border-radius: 5px;
      }
  </style>
 <div class="full-width">
@@ -53,6 +58,8 @@
 								<textarea style='width:430px' name='c' placeholder="Pesan anda.." id="c_message" required></textarea>
 							</p>
 							<p><input type="submit" name="submit" class="styled-button" value="Send a message" onclick="return confirm('Pesan anda ini akan kami balas melalui email ?')"/></p>
+                            <p>Atau Hubungi Kami Via Whatsapp</p>
+                            <p><a type="button" class="button-wa" href="https://wa.me/+6282177998176/?text=Hai BKSDA Sumsel!"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kirim Whatsapp</a></p>
 						</form>
 					</div>
 				</div>
