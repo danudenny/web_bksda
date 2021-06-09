@@ -1,12 +1,12 @@
-<?php 
+<?php
     echo "
               <div class='card card-info'>
                 <div class='card-header with-border'>
-                  <h3 class='card-title'>LIhat dan Balas Pesan Masuk</h3>
+                  <h3 class='card-title'>Lihat dan Balas Pesan Masuk</h3>
                 </div>
               <div class='card-body'>";
               $attributes = array('class'=>'form-horizontal','role'=>'form');
-              echo form_open_multipart($this->uri->segment(1).'/detail_pesanmasuk/'.$rows['id_hubungi'],$attributes); 
+              echo form_open_multipart($this->uri->segment(1).'/detail_pesanmasuk/'.$rows['id_hubungi'],$attributes);
 
                     if (isset($_POST['submit'])){
                        echo "<div class='alert alert-success alert-dismissible fade in' role='alert'> 
@@ -19,7 +19,7 @@
 
                     <tr><th width='120px' scope='row'>Nama Pengirim</th>  <td><input type='text' class='form-control' name='a' value='$rows[nama]' readonly='on'></td></tr>
                     <tr><th width='120px' scope='row'>Email Pengirim</th> <td><input type='text' class='form-control' name='b' value='$rows[email]' readonly='on'></td></tr>
-                    <tr><th width='120px' scope='row'>Subjek Pesan</th>   <td><input type='text' class='form-control' name='c' value='$rows[subjek]' readonly='on'></td></tr>
+                    <tr><th width='120px' scope='row'>Subjek Pesan</th>   <td><input type='text' class='form-control' name='c' value='$rows[kategori]' readonly='on'></td></tr>
                     <tr><th scope='row'>Isi Pesan</th>                    <td><textarea class='form-control' name='isi' style='height:120px'  readonly='on'>$rows[pesan]</textarea></td></tr>
                     <tr><th scope='row'>Balas Pesan</th>                    <td><textarea id='editor1' class='form-control' name='d' style='height:120px'></textarea></td></tr>
       

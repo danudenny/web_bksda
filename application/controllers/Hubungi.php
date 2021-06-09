@@ -20,31 +20,18 @@ class Hubungi extends CI_Controller {
 		$data['keywords'] = 'hubungi, kontak, kritik, saran, pesan';
 		$data['rows'] = $row;
 
-		$this->load->helper('captcha');
-		$vals = array(
-            'img_path'	 => './captcha/',
-            'img_url'	 => base_url().'captcha/',
-            'font_size'     => 17,
-            'img_width'	 => '150',
-            'img_height' => 29,
-            'border' => 0, 
-            'word_length'   => 5,
-            'expiration' => 7200
-        );
-
-        $cap = create_captcha($vals);
-        $data['image'] = $cap['image'];
-        $this->session->set_userdata('mycaptcha', $cap['word']);
-		$this->template->load(template().'/template',template().'/hubungi',$data);
+        $kategori = $this->model_utama->kategori();
+		$this->template->load(template().'/template',template().'/hubungi',$data, $kategori);
 	}
 
 	function kirim(){
 		if (isset($_POST['submit'])){
-			if ($this->input->post() && (strtolower($this->input->post('security_code')) == strtolower($this->session->userdata('mycaptcha')))) {
+			if ($this->input->post()) {
 				$data = array('nama'=>cetak($this->input->post('a',TRUE)),
 	                            'email'=>cetak($this->input->post('b',TRUE)),
 	                            'subjek'=>$_SERVER['REMOTE_ADDR'],
 	                            'pesan'=>cetak($this->input->post('c',TRUE)),
+                                'kategori'=>cetak($this->input->post('d',TRUE)),
 	                            'tanggal'=>date('Y-m-d'),
 	                            'jam'=>date('H:i:s'));
 				$this->model_utama->insert('hubungi',$data);

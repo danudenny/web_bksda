@@ -129,4 +129,9 @@ class Model_utama extends CI_model{
             $this->db->update('statistik',$datadb);
         }
     }
+
+    function kategori() {
+        return $this->db->query("SELECT * FROM kategori");
+    }
+
 }

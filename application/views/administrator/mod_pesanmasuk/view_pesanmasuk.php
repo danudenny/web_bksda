@@ -12,7 +12,7 @@
                         <th>Nama </th>
                         <th>Email</th>
                         <th>Subjek</th>
-                        <th>Tanggal</th>
+                          <th>Tanggal</th>
                         <th style='width:70px'>Action</th>
                       </tr>
                     </thead>
@@ -25,7 +25,7 @@
                     echo "<tr style='font-weight:$bold'><td>$no</td>
                               <td>$row[nama]</td>
                               <td>$row[email]</td>
-                              <td>$row[subjek]</td>
+                              <td>$row[kategori]</td>
                               <td>$tgl</td>
                               <td><center>
                                 <a class='btn btn-success btn-xs' title='Edit Data' href='".base_url().$this->uri->segment(1)."/detail_pesanmasuk/$row[id_hubungi]'><span class='nav-icon fas fa-paper-plane'></span></a>

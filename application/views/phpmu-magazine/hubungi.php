@@ -4,6 +4,11 @@
  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
+ <style>
+     .contact-form-kategori select{
+         color: #0b2e13;
+     }
+ </style>
 <div class="full-width">
 	<div class="block">
 		<div class="block-title">
@@ -19,7 +24,9 @@
 
 			<div class="paragraph-row">
 				<div class="column6">
-					<?php echo "$rows[alamat]";?>
+					<?php if (!empty($rows)) {
+                        echo "$rows[alamat]";
+                    } ?>
 				</div>
 				<div class="column6">
 					<div style="width:370px" id="writecomment">
@@ -32,14 +39,18 @@
 								<label for="c_email">E-mail<span class="required">*</span></label>
 								<input type="text" placeholder="E-mail" name='b' id="c_email" required/>
 							</p>
+                            <p class="contact-form-kategori">
+                                <label for="kategori">Kategori<span class="required">*</span></label>
+                                <select class="form-control" name='d' id="c_kategori">
+                                    <option value=null>Pilih Kategori</option>
+                                    <option value='Kebakaran Hutan dan Lahan'>Pelaporan Kebakaran Hutan dan Lahan</option>
+                                    <option value='Satwa'>Pelaporan Satwa Langka</option>
+                                    <option value='Lainnya'>Lainnya</option>
+                                </select>
+                            </p>
 							<p class="contact-form-message">
 								<label for="c_message">Pesan<span class="required">*</span></label>
 								<textarea style='width:430px' name='c' placeholder="Pesan anda.." id="c_message" required></textarea>
-							</p>
-							<p class="contact-form-message">
-								<label for="c_message">
-								<?php echo $image; ?><br></label>
-								<input name='security_code' maxlength=6 type="text" class="required" placeholder="Masukkkan kode di sebelah kiri..">
 							</p>
 							<p><input type="submit" name="submit" class="styled-button" value="Send a message" onclick="return confirm('Pesan anda ini akan kami balas melalui email ?')"/></p>
 						</form>

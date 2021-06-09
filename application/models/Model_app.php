@@ -75,6 +75,10 @@ class Model_app extends CI_model{
         return $this->db->query("SELECT count(*) as jumlah, tanggal FROM statistik GROUP BY tanggal ORDER BY tanggal DESC LIMIT 10");
     }
 
+    function grafik_laporan(){
+        return $this->db->query("SELECT count(*) as jumlah, tanggal FROM hubungi GROUP BY tanggal ORDER BY tanggal DESC LIMIT 10");
+    }
+
     function kategori_populer($limit){
         return $this->db->query("SELECT * FROM (SELECT a.*, b.jum_dibaca FROM
                                     (SELECT * FROM kategori) as a left join
