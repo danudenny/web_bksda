@@ -388,14 +388,14 @@ class Administrator extends CI_Controller {
 	function tambah_listberita(){
 		cek_session_akses('listberita',$this->session->id_session);
 		if (isset($_POST['submit'])){
-			$config['upload_path'] = 'asset/foto_berita/';
+			$config['upload_path'] = './asset/foto_berita/';
 	        $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-	        $config['max_size'] = '7000'; // kb
+	        $config['max_size'] = '10000'; // kb
 	        $this->load->library('upload', $config);
 	        $this->upload->do_upload('k');
 	        $hasil=$this->upload->data();
             
-            $config['source_image'] = 'asset/foto_berita/'.$hasil['file_name'];
+            $config['source_image'] = './asset/foto_berita/'.$hasil['file_name'];
             $config['wm_text'] = 'balaiksdasumsel.org';
             $config['wm_type'] = 'text';
             $config['wm_font_path'] = './system/fonts/Helvetica.ttf';
@@ -466,15 +466,15 @@ class Administrator extends CI_Controller {
 		cek_session_akses('listberita',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
-			$config['upload_path'] = 'asset/foto_berita/';
+			$config['upload_path'] = './asset/foto_berita/';
 	        $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-	        $config['max_size'] = '3000'; // kb
+	        $config['max_size'] = '10000'; // kb
 	        $this->load->library('upload', $config);
 	        $this->upload->do_upload('k');
 	        $hasil=$this->upload->data();
 
-            $config['source_image'] = 'asset/foto_berita/'.$hasil['file_name'];
-            $config['wm_text'] = '';
+            $config['source_image'] = './asset/foto_berita/'.$hasil['file_name'];
+            $config['wm_text'] = 'balaiksdasumsel.org';
             $config['wm_type'] = 'text';
             $config['wm_font_path'] = './system/fonts/texb.ttf';
             $config['wm_font_size'] = '26';
@@ -621,7 +621,7 @@ class Administrator extends CI_Controller {
 	function tambah_kategoriberita(){
 		cek_session_akses('kategoriberita',$this->session->id_session);
 		if (isset($_POST['submit'])){
-            $config['upload_path'] = 'asset/foto_berita/';
+            $config['upload_path'] = './asset/foto_berita/';
             $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|swf';
             $config['max_size'] = '5000'; // kb
             $this->load->library('upload', $config);
@@ -652,7 +652,7 @@ class Administrator extends CI_Controller {
 		cek_session_akses('kategoriberita',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
-            $config['upload_path'] = 'asset/foto_berita/';
+            $config['upload_path'] = './asset/foto_berita/';
             $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG|swf';
             $config['max_size'] = '5000'; // kb
             $this->load->library('upload', $config);

@@ -105,7 +105,7 @@
 	</div>
 	<div class='flex-item'>
 		<h4 class='header_footer'><i class="lni lni-twitter"></i> Twitter</h4>
-		<a class="twitter-timeline" data-width="320" data-height="359" href="https://twitter.com/bksdasumsel?ref_src=twsrc%5Etfw">Tweets by bksdasumsel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<a class="twitter-timeline" data-width="320" data-height="359" href="https://twitter.com/bksda_sumsel?ref_src=twsrc%5Etfw">Tweets by bksdasumsel</a>
 	</div>
 </div>
 <div class="copyright-info">
